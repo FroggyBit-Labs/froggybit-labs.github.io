@@ -8,6 +8,8 @@
   <link rel="alternate" hreflang="fr" href="fr/">
   <link rel="alternate" hreflang="es" href="es/">
   <link rel="alternate" hreflang="de" href="de/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/symbol-small.svg" type="image/svg+xml">
   <style>
     :root { --bg: #ffffff; --fg: #1f2328; --muted: #57606a; --border: #8c959f; --link: #0b5cad; }
     @media (prefers-color-scheme: dark) {
@@ -19,6 +21,8 @@
     h2 { font-size: 1.2rem; margin-top: 2rem; }
     a { color: var(--link); }
     .meta, .note { color: var(--muted); }
+    .brand { margin: 0 0 1.75rem; padding: 0.5rem 0; }
+    .brand img { display: block; width: clamp(160px, 50%, 220px); height: auto; }
     nav.lang { margin-bottom: 1.5rem; }
     ul { padding-left: 1.2rem; }
     li { margin: 0.3rem 0; }
@@ -26,6 +30,7 @@
 </head>
 <body>
 <main>
+  <header class="brand"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/lockup-horizontal-on-dark.svg"><img src="/assets/lockup-horizontal.svg" alt="FroggyBit Labs" width="220" height="40"></picture></header>
   <nav class="lang" aria-label="Language / Langue / Idioma / Sprache"><span aria-current="page"><strong>English</strong></span> · <a href="fr/" hreflang="fr" lang="fr">Français</a> · <a href="es/" hreflang="es" lang="es">Español</a> · <a href="de/" hreflang="de" lang="de">Deutsch</a></nav>
   <h1>Privacy policy – Offline Markdown Viewer</h1>
   <p class="meta">Publisher: FroggyBit Labs · Last updated: 2026-11-16</p>
