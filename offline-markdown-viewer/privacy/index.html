@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy – Offline Markdown Viewer</title>
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="fr" href="fr/">
+  <link rel="alternate" hreflang="es" href="es/">
+  <link rel="alternate" hreflang="de" href="de/">
+  <style>
+    :root { --bg: #ffffff; --fg: #1f2328; --muted: #57606a; --border: #8c959f; --link: #0b5cad; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --border: #6e7681; --link: #58a6ff; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    h1 { font-size: 1.7rem; line-height: 1.25; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    a { color: var(--link); }
+    .meta, .note { color: var(--muted); }
+    nav.lang { margin-bottom: 1.5rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+  </style>
+</head>
+<body>
+<main>
+  <nav class="lang" aria-label="Language / Langue / Idioma / Sprache"><span aria-current="page"><strong>English</strong></span> · <a href="fr/" hreflang="fr" lang="fr">Français</a> · <a href="es/" hreflang="es" lang="es">Español</a> · <a href="de/" hreflang="de" lang="de">Deutsch</a></nav>
+  <h1>Privacy policy – Offline Markdown Viewer</h1>
+  <p class="meta">Publisher: FroggyBit Labs · Last updated: 2026-11-16</p>
+
+  <p><strong>In short: Offline Markdown Viewer does not collect, transmit, share or sell any data.</strong> Everything happens on your device, inside your browser. Offline Markdown Viewer has no dependency on any remote program or service: everything it needs is bundled in the extension. Only you decide which external content, if any, your own documents may load.</p>
+
+  <h2>What the extension does with your files</h2>
+  <p>Offline Markdown Viewer reads Markdown files that you open (or drop into its viewer page) and renders them locally in your browser. File contents are never uploaded, copied to a server or shared with anyone.</p>
+
+  <h2>What is stored on your device</h2>
+  <p>Offline Markdown Viewer uses the browser's local extension storage (<code>storage</code> permission) for two things only:</p>
+  <ul><li><strong>Appearance settings</strong>: theme, colors, text size, font, and similar options.</li><li><strong>Pins</strong> that you set on lines of a document: the line number, a short excerpt of that line (up to 80 characters), the time it was set, and an identifier of the document (the file address for files opened directly in the browser, or the file name plus its first line in the viewer page).</li><li><strong>Remote images setting</strong>: whether the option is on, and the list of sites you typed (off and empty by default).</li></ul>
+  <p>This data stays in your browser profile on your device. It is not synchronized through your browser account and is not sent anywhere. You can delete pins from the "Pins" panel ("Clear all" or "Remove"), and you can delete everything by removing the extension or clearing the extension's data in your browser.</p>
+
+  <h2>Network access, analytics and third parties</h2>
+  <ul><li>By default Offline Markdown Viewer makes no network requests: remote images and other remote resources inside a Markdown file are blocked, not loaded.</li><li><strong>Optional, off by default:</strong> if you turn on "Remote images" and list some sites, your browser loads images from those sites only (the https:// or http:// addresses you typed), for documents opened directly in the browser. Those sites see your IP address and when you open the document, like any website you visit, and your browser may send them the cookies it already holds for them. Offline Markdown Viewer adds no referrer and no identifier, and sends nothing to FroggyBit Labs. You can turn this off at any time. Network folders (for example \\server\share\) work the same way, for servers you list: the server sees your request, and Windows may send it your sign-in details, so list only servers you trust.</li><li>Offline Markdown Viewer contains no analytics, advertising, tracking or telemetry, and no code is downloaded from elsewhere.</li><li>Offline Markdown Viewer does not use third-party services. The libraries it needs (marked, DOMPurify, Mermaid) are bundled inside the extension.</li><li>Links in a document that you click open in a new browser tab like any other link; Offline Markdown Viewer does not track them.</li></ul>
+
+  <h2>Permissions</h2>
+  <ul><li><code>storage</code>: to keep the settings and pins described above.</li><li>Access to local Markdown files (<code>.md</code>, <code>.markdown</code>, <code>.mdown</code>) so they can be rendered automatically. This requires your explicit consent in the browser ("Allow access to file URLs"). Offline Markdown Viewer does not read any other page.</li></ul>
+
+  <h2>Use of data</h2>
+  <p>Since Offline Markdown Viewer does not collect user data, it does not sell it, transfer it to third parties, use it for advertising, or use it to determine creditworthiness or for lending purposes.</p>
+
+  <h2>Children</h2>
+  <p>Offline Markdown Viewer collects no data from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be published at this address with an updated date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:FroggyBLC@outlook.com">FroggyBLC@outlook.com</a></p>
+</main>
+</body>
+</html>

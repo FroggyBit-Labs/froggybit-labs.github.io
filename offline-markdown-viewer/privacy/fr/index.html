@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politique de confidentialité – Offline Markdown Viewer</title>
+  <link rel="alternate" hreflang="en" href="../">
+  <link rel="alternate" hreflang="fr" href="./">
+  <link rel="alternate" hreflang="es" href="../es/">
+  <link rel="alternate" hreflang="de" href="../de/">
+  <style>
+    :root { --bg: #ffffff; --fg: #1f2328; --muted: #57606a; --border: #8c959f; --link: #0b5cad; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --border: #6e7681; --link: #58a6ff; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    h1 { font-size: 1.7rem; line-height: 1.25; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    a { color: var(--link); }
+    .meta, .note { color: var(--muted); }
+    nav.lang { margin-bottom: 1.5rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+  </style>
+</head>
+<body>
+<main>
+  <nav class="lang" aria-label="Language / Langue / Idioma / Sprache"><a href="../" hreflang="en" lang="en">English</a> · <span aria-current="page"><strong>Français</strong></span> · <a href="../es/" hreflang="es" lang="es">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a></nav>
+  <h1>Politique de confidentialité – Offline Markdown Viewer</h1>
+  <p class="meta">Éditeur : FroggyBit Labs · Dernière mise à jour : 2026-11-16</p>
+  <p class="note"><em>Traduction de la version anglaise, qui fait foi en cas de divergence.</em></p>
+
+  <p><strong>En bref : Offline Markdown Viewer ne collecte, ne transmet, ne partage et ne vend aucune donnée.</strong> Tout se passe sur votre appareil, dans votre navigateur. Offline Markdown Viewer ne dépend d'aucun programme ni service distant : tout ce dont il a besoin est inclus dans l'extension. Vous seul décidez du contenu externe, le cas échéant, que vos propres documents peuvent charger.</p>
+
+  <h2>Ce que l'extension fait de vos fichiers</h2>
+  <p>Offline Markdown Viewer lit les fichiers Markdown que vous ouvrez (ou déposez dans sa page de lecture) et les affiche localement dans votre navigateur. Le contenu des fichiers n'est jamais envoyé, copié sur un serveur ni partagé avec qui que ce soit.</p>
+
+  <h2>Ce qui est enregistré sur votre appareil</h2>
+  <p>Offline Markdown Viewer utilise le stockage local de l'extension du navigateur (autorisation <code>storage</code>) pour deux choses seulement :</p>
+  <ul><li><strong>Les réglages d'apparence</strong> : thème, couleurs, taille du texte, police et options similaires.</li><li><strong>Les points d'étape</strong> que vous posez sur des lignes d'un document : le numéro de ligne, un court extrait de cette ligne (80 caractères au plus), l'heure de la pose et un identifiant du document (l'adresse du fichier pour les fichiers ouverts directement dans le navigateur, ou le nom du fichier suivi de sa première ligne dans la page de lecture).</li><li><strong>Le réglage des images distantes</strong> : si l'option est activée, et la liste de sites que vous avez saisie (désactivée et vide par défaut).</li></ul>
+  <p>Ces données restent dans votre profil de navigateur, sur votre appareil. Elles ne sont pas synchronisées via votre compte de navigateur et ne sont envoyées nulle part. Vous pouvez supprimer des points d'étape depuis le panneau « Étapes » (« Tout effacer » ou « Retirer »), et tout supprimer en désinstallant l'extension ou en effaçant ses données dans votre navigateur.</p>
+
+  <h2>Accès réseau, mesure d'audience et tiers</h2>
+  <ul><li>Par défaut, Offline Markdown Viewer n'effectue aucune requête réseau : les images et autres ressources distantes d'un fichier Markdown sont bloquées, pas chargées.</li><li><strong>Facultatif, désactivé par défaut :</strong> si vous activez « Images distantes » et listez des sites, votre navigateur charge les images de ces sites uniquement (les adresses https:// ou http:// que vous avez saisies), pour les documents ouverts directement dans le navigateur. Ces sites voient votre adresse IP et le moment où vous ouvrez le document, comme n'importe quel site que vous visitez, et votre navigateur peut leur envoyer les cookies qu'il détient déjà pour eux. Offline Markdown Viewer n'ajoute aucune page d'origine ni aucun identifiant, et n'envoie rien à FroggyBit Labs. Vous pouvez le désactiver à tout moment. Les dossiers réseau (par exemple \\serveur\partage\) fonctionnent de la même façon, pour les serveurs que vous listez : le serveur voit votre demande, et Windows peut lui envoyer vos informations de connexion ; ne listez donc que des serveurs de confiance.</li><li>Offline Markdown Viewer ne contient aucun outil de mesure d'audience, de publicité, de suivi ni de télémétrie, et aucun code n'est téléchargé depuis un autre site.</li><li>Offline Markdown Viewer n'utilise aucun service tiers. Les bibliothèques dont il a besoin (marked, DOMPurify, Mermaid) sont incluses dans l'extension.</li><li>Les liens d'un document sur lesquels vous cliquez s'ouvrent dans un nouvel onglet comme n'importe quel lien ; Offline Markdown Viewer ne les suit pas.</li></ul>
+
+  <h2>Autorisations</h2>
+  <ul><li><code>storage</code> : pour conserver les réglages et les points d'étape décrits ci-dessus.</li><li>Accès aux fichiers Markdown locaux (<code>.md</code>, <code>.markdown</code>, <code>.mdown</code>) pour les afficher automatiquement. Cela exige votre consentement explicite dans le navigateur (« Autoriser l'accès aux URL de fichiers »). Offline Markdown Viewer ne lit aucune autre page.</li></ul>
+
+  <h2>Utilisation des données</h2>
+  <p>Comme Offline Markdown Viewer ne collecte aucune donnée d'utilisateur, il ne la vend pas, ne la transfère pas à des tiers, ne l'utilise pas à des fins publicitaires ni pour évaluer la solvabilité ou accorder un crédit.</p>
+
+  <h2>Enfants</h2>
+  <p>Offline Markdown Viewer ne collecte de données auprès de personne, y compris des enfants.</p>
+
+  <h2>Modifications de cette politique</h2>
+  <p>Si cette politique change, la nouvelle version sera publiée à cette adresse avec une date mise à jour.</p>
+
+  <h2>Contact</h2>
+  <p>Questions sur cette politique : <a href="mailto:FroggyBLC@outlook.com">FroggyBLC@outlook.com</a></p>
+</main>
+</body>
+</html>
